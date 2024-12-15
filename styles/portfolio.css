@@ -1,8 +1,38 @@
-h1 {
-  font-family: "Nunito", sans-serif;
+:root {
+  --body-fonts: "Nunito", sans-serif;
+  --primary-color: #fff;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--body-fonts);
   font-weight: bold;
 }
+h1 {
+  font-size: 72px;
+  padding-top: 100px;
+}
 p {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--body-fonts);
   font-weight: normal;
+  font-size: 24px;
+  opacity: 100%;
+  line-height: 2;
+}
+header {
+  height: 300px;
+  color: var(--primary-color);
+  text-align: center;
+  padding-top: 30px;
+}
+
+header img {
+  height: 265px;
+  width: 1460px;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 97px 0;
 }
